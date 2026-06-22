@@ -102,12 +102,20 @@ export default function Footer() {
           </a>
         </div>
 
-        <p className="text-xs" style={{ color: 'var(--color-gold-dark)' }}>
-          Pix: +55 61 8149-4556 · Nome: Rebeca Alvim
-        </p>
-
         <p className="text-xs" style={{ color: 'var(--color-wine-light)' }}>
           © {new Date().getFullYear()} Stage and Speech · Todos os direitos reservados
+        </p>
+
+        <p className="text-xs" style={{ color: 'rgba(201,168,76,0.35)', letterSpacing: '0.05em' }}>
+          Desenvolvido por{' '}
+          <a
+            href="https://cerradowebdesing.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'rgba(201,168,76,0.55)', textDecoration: 'none', fontWeight: 600 }}
+          >
+            Cerrado Web Design
+          </a>
         </p>
       </div>
     </footer>
