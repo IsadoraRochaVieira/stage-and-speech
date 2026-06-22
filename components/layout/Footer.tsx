@@ -1,3 +1,4 @@
+'use client'
 import TheatreMasks from '@/components/ui/TheatreMasks'
 
 function IconWhatsApp() {
@@ -42,28 +43,34 @@ export default function Footer() {
 
         <div className="gold-divider w-full max-w-xs" />
 
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex justify-center gap-5">
           <a
             href="https://wa.me/5561981494556"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
             style={{
+              width: 40,
+              height: 40,
+              borderRadius: '50%',
               display: 'flex',
               alignItems: 'center',
-              gap: 8,
-              padding: '10px 20px',
-              borderRadius: 2,
-              background: '#25D366',
-              color: '#fff',
-              fontFamily: "'Playfair Display', serif",
-              fontSize: 14,
-              fontWeight: 600,
+              justifyContent: 'center',
+              color: 'var(--color-gold)',
+              border: '1px solid rgba(201,168,76,0.3)',
               textDecoration: 'none',
-              border: '1.5px solid rgba(255,255,255,0.2)',
+              transition: 'border-color 0.2s, color 0.2s',
+            }}
+            onMouseEnter={e => {
+              (e.currentTarget as HTMLAnchorElement).style.borderColor = 'var(--color-gold)'
+              ;(e.currentTarget as HTMLAnchorElement).style.color = '#fff'
+            }}
+            onMouseLeave={e => {
+              (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(201,168,76,0.3)'
+              ;(e.currentTarget as HTMLAnchorElement).style.color = 'var(--color-gold)'
             }}
           >
-            <IconWhatsApp /> WhatsApp
+            <IconWhatsApp />
           </a>
           <a
             href="https://www.instagram.com/rebecalvim"
@@ -71,21 +78,27 @@ export default function Footer() {
             rel="noopener noreferrer"
             aria-label="Instagram"
             style={{
+              width: 40,
+              height: 40,
+              borderRadius: '50%',
               display: 'flex',
               alignItems: 'center',
-              gap: 8,
-              padding: '10px 20px',
-              borderRadius: 2,
-              background: 'linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045)',
-              color: '#fff',
-              fontFamily: "'Playfair Display', serif",
-              fontSize: 14,
-              fontWeight: 600,
+              justifyContent: 'center',
+              color: 'var(--color-gold)',
+              border: '1px solid rgba(201,168,76,0.3)',
               textDecoration: 'none',
-              border: '1.5px solid rgba(255,255,255,0.2)',
+              transition: 'border-color 0.2s, color 0.2s',
+            }}
+            onMouseEnter={e => {
+              (e.currentTarget as HTMLAnchorElement).style.borderColor = 'var(--color-gold)'
+              ;(e.currentTarget as HTMLAnchorElement).style.color = '#fff'
+            }}
+            onMouseLeave={e => {
+              (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(201,168,76,0.3)'
+              ;(e.currentTarget as HTMLAnchorElement).style.color = 'var(--color-gold)'
             }}
           >
-            <IconInstagram /> @rebecalvim
+            <IconInstagram />
           </a>
         </div>
 
