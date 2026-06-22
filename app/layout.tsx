@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import CookieBanner from '@/components/ui/CookieBanner'
+import WhatsAppFloat from '@/components/ui/WhatsAppFloat'
 
 const base = 'https://stageandspeech.cerradowebdesing.com.br'
 
@@ -56,6 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt-BR" className="h-full">
       <body className="min-h-full flex flex-col antialiased">
         {children}
+        <WhatsAppFloat />
         <CookieBanner />
       </body>
     </html>
