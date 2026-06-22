@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Dancing+Script:wght@600&family=Inter:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme inline {
+  --color-wine:        #5C1A2E;
+  --color-wine-light:  #7A2440;
+  --color-wine-dark:   #3D1020;
+  --color-gold:        #C9A84C;
+  --color-gold-light:  #E2C46E;
+  --color-gold-dark:   #9C7A2A;
+  --color-cream:       #F5EDD8;
+  --color-cream-light: #FBF7EE;
+  --color-cream-dark:  #E8D9B5;
+  --color-bark:        #2C1A0E;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-bark);
+  font-family: 'Inter', sans-serif;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+.font-title  { font-family: 'Playfair Display', Georgia, serif; font-weight: 900; }
+.font-script { font-family: 'Dancing Script', cursive; font-weight: 600; }
+
+.gold-divider {
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+  margin: 0 auto;
+}
+
+.btn-gold {
+  background-color: var(--color-gold);
+  color: var(--color-wine-dark);
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.8rem 2.2rem;
+  border-radius: 2px;
+  border: 2px solid var(--color-gold-dark);
+  transition: all 0.2s;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+.btn-gold:hover {
+  background-color: var(--color-gold-light);
+  box-shadow: 0 4px 20px rgba(201,168,76,0.5);
+  transform: translateY(-1px);
+}
+
+.btn-wine {
+  background-color: var(--color-wine);
+  color: var(--color-cream);
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.8rem 2.2rem;
+  border-radius: 2px;
+  border: 2px solid var(--color-wine-light);
+  transition: all 0.2s;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+.btn-wine:hover {
+  background-color: var(--color-wine-light);
+  box-shadow: 0 4px 20px rgba(92,26,46,0.4);
+  transform: translateY(-1px);
+}
+
+.btn-outline-gold {
+  background: transparent;
+  color: var(--color-gold);
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.8rem 2.2rem;
+  border-radius: 2px;
+  border: 2px solid var(--color-gold);
+  transition: all 0.2s;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+.btn-outline-gold:hover {
+  background-color: var(--color-gold);
+  color: var(--color-wine-dark);
+}
+
+.vintage-card {
+  background-color: var(--color-cream-light);
+  border: 1px solid var(--color-gold-dark);
+  box-shadow: 4px 4px 0 var(--color-gold-dark);
+  position: relative;
+  padding: 1.5rem;
+}
+
+.ornament-corners::before, .ornament-corners::after {
+  content: '✦';
+  color: var(--color-gold);
+  font-size: 0.6rem;
+  position: absolute;
+  top: 6px;
+}
+.ornament-corners::before { left: 8px; }
+.ornament-corners::after  { right: 8px; }
+
+details summary { list-style: none; cursor: pointer; }
+details summary::-webkit-details-marker { display: none; }
+.faq-icon { transition: transform 0.3s; display: inline-block; }
+details[open] .faq-icon { transform: rotate(45deg); }
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(201,168,76,0.1);
+  border: 1px solid var(--color-gold-dark);
+  padding: 1rem;
+  min-width: 70px;
+  border-radius: 2px;
+}
+
+.section-wine { background-color: var(--color-wine); color: var(--color-cream); }
+.section-cream { background-color: var(--color-cream); }
+.section-cream-dark { background-color: var(--color-cream-dark); }
