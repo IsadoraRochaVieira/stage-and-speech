@@ -41,6 +41,9 @@ export const metadata: Metadata = {
     description: 'Clube de Leitura Dramática em Inglês com Rebeca Alvim',
     images: ['/images/logo-collage.jpg'],
   },
+  verification: {
+    google: 'Z9cD5Od7j3iqjKu1Ky0HlSW7A36d9lxPl_bqr_VK2wg',
+  },
   robots: {
     index: true,
     follow: true,
