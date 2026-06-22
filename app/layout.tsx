@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     title: 'Stage and Speech | Clube de Leitura Dramática em Inglês',
     description:
       'Encontros quinzenais online de leitura dramática em inglês com Rebeca Alvim — atriz e professora CELTA Certified.',
-    images: [{ url: '/images/logo-collage.jpg', width: 800, height: 600, alt: 'Stage and Speech' }],
+    images: [{ url: '/images/logo-circular.jpg', width: 800, height: 800, alt: 'Stage and Speech' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Stage and Speech',
     description: 'Clube de Leitura Dramática em Inglês com Rebeca Alvim',
-    images: ['/images/logo-collage.jpg'],
+    images: ['/images/logo-circular.jpg'],
   },
   verification: {
     google: 'Z9cD5Od7j3iqjKu1Ky0HlSW7A36d9lxPl_bqr_VK2wg',
